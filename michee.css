@@ -1,0 +1,272 @@
+/* Student Name: Michee Ntambwe
+    File Name:stylesheet.css
+    Date:04/11/2026
+*/
+
+/* css reset */ 
+body, header, nav, main, footer{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* body */
+/* Basicaly for the mobile and tablet viewport */
+ body{
+    background-color: white;
+    margin: 0.5em;  
+    font-family: "Times New Roman", "Roboto", sans-serif;
+    font-size: 1em;
+    
+}
+.mobile-tablet-header{
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    border: 1em groove #2a1f14;
+    background-color:red;
+    margin-left: 7em;
+    margin-right: 7em;
+    margin-bottom: 2em;
+    margin-top: 1.5em;
+    
+}
+#nav-link{
+    display: none;
+}
+nav li, li a{
+    display: block;
+    color: white;  
+}
+
+fieldset legend{
+    font-weight:bold;
+    font-size: 1.3em;
+}
+label, input{
+    display: block;
+    
+}
+textarea, input, textarea{
+    margin-bottom: 1.5em;
+}
+form #submit{
+    color: red;
+    background-color: Antiquewhite;
+    font-size: 1.7em;
+    border-style:dashed;
+    border-radius: 1em;
+    padding: 0.8em;
+    margin: auto;   
+}
+.mobile-tablet table{
+        border: 1em groove #2a1f14;
+        border-collapse: collapse;
+        width:25em;
+}
+.mobile-tablet th, td{
+    background-color:cadetblue;
+    color:000;
+    border:1px solid #fff; 
+    text-align: center;
+    padding: 0.5em;
+
+}
+.mobile-tablet td{
+    background-color: gray;
+}
+.mobile-tablet caption{
+    font-size: 2em;
+    font-weight: bold;
+}
+#contact{
+    text-align: center;
+    font-weight: bold;
+}
+#contact a, a:hover{
+    color: #2a1f14;
+}
+
+#contact iframe{
+    width: 30em;
+}
+.mobile-tablet-blog p, h1, img{
+    text-align: center;
+}
+.unity{
+    display: block;
+    border: 1em groove gray;
+    border-radius: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25em;
+}
+.call-action,.childhood,.dothesame, .childrenneed, .hope_gana{
+    width: 20em;
+    height: auto;
+    padding-top: 1em;
+    border-radius: 1.5em;  
+}
+.the-news-video1{
+        display: flex;
+        align-items: flex-start;
+        gap: 2em;
+    }
+.the-news-video2{
+    overflow: auto;
+}
+.childhood{
+    float: right;
+}
+.the-news-video3{
+    display: flex;
+    align-items:flex-start;
+    gap: 2em;
+}
+.the-news-video5{
+    overflow: auto;
+}
+.hope_gana{
+    float: left;
+    padding-right: 2em;
+}
+
+.the-news-video4{
+    overflow: auto;
+}
+.childrenneed{
+    float: right;
+}
+
+.intro{
+    border: 2em groove gray;
+    color: black;    
+}
+.paragraph a{
+    text-decoration: none; 
+    color: black;    
+
+}
+.paragraph p {
+    border: 2em groove gray;
+}
+
+
+
+footer{
+    background-color: red;
+    text-align: center;
+    color: black;
+    
+    
+
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer a img{
+    width: 5em;
+    size: 10em;
+} 
+
+
+
+
+
+.desktop-larg-img {
+    display: none;
+
+}
+
+@media screen and (min-width: 1000px), print{
+    /* Desktop viewport, large desktop*/
+  
+    .mobile-tablet-menu:hover{
+    color: white;
+    background-color: black;
+}
+    nav li, li a{
+        display: inline-block;
+        color: white;
+        font-size: 1.2em;
+        padding: 0.5em;
+        text-decoration: none;
+    
+        
+    }
+    nav li a:hover{
+        color:burlywood;
+        background-color: black;
+        border: 1em;
+    }
+   
+    .desktop-larg-img{
+        display: block;
+        border-radius: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60em;
+       
+    }
+
+    form{
+        width: auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 3em;
+        
+    }
+    #submit{
+        grid-column:1 / span 2;
+    }
+    
+    .desktop-largedesktop table{
+            border: 3em groove #2a1f14;
+            border-collapse: collapse;
+            width:60em;
+
+    }
+    .desktop-largedesktop th, td{
+        background-color:cadetblue;
+        color:000;
+        border:1px solid #fff; 
+        text-align: center;
+        padding: 1em;
+        font-size: 1em;
+    }
+    #contact a:hover{
+        color: white;
+        background-color: black;
+    }
+
+    /* Blog viewport */
+    .unity{
+        width: auto;
+    }
+    .call-action, .childhood, .dothesame, .childrenneed, .hope_gana{
+        width: 37em;
+        height: auto;
+    }
+   
+    .base{
+        display: flex;
+        align-items: flex-start;
+        gap: 2em;
+       
+    }
+    /* .intro-a{
+        float: left;
+        width: 25em;
+    } */
+}
+
+@media print {
+    
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+    
+}
